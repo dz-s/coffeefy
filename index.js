@@ -2,7 +2,7 @@ var os = require("os");
 
 function Cofeefy(options) {
     
-    setTimeout(function(){cpuAverage();}, 5000);
+    setTimeout(function(){cpuAverage();}, 4000);
 }
 
 Cofeefy.prototype.apply = function (compiler) {
