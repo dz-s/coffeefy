@@ -1,6 +1,6 @@
 var Cofeefy = require('./index');
 plugins: [
-    new Cofeefy({
-      options: 'nada'
-    })
-  ]
+  new Coffeefy({
+    options: 'nada'
+  })
+]
