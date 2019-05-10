@@ -1,6 +1,7 @@
+
 var Cofeefy = require('./index');
-plugins: [
-  new Coffeefy({
-    options: 'nada'
-  })
-]
+
+module.exports = {
+  plugins: [new Cofeefy({ options: true })],
+  mode: 'development'
+};
