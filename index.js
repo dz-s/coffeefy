@@ -1,4 +1,8 @@
 const os = require("os");
+const ora = require('ora');
+
+const addon = require('./build/Release/addon');
+
 //Create function to get CPU information
 cpuAverage = () => {
 
@@ -43,10 +47,14 @@ cpuGetMetrics = () => {
     //Calculate the average percentage CPU usage
     let percentageCPU = 100 - ~~(100 * idleDifference / totalDifference);
 
-    //Output result to console
-    console.log(percentageCPU + "% CPU Usage.");
-    console.log("PID:", process.pid)
-    console.log("debugPort", process.debugPort)
+    // const spinner = ora('Loading unicorns').start();
+
+    // setTimeout(() => {
+    //   spinner.color = 'yellow';
+    //   spinner.text = 'Loading rainbows';
+    // }, 1000);
+    console.log(addon.hello());
+
 
     while (true) { }
 
